@@ -7,5 +7,6 @@ import com.navidad.ejuno.model.Grupo;
 
 @Repository
 public interface IGrupoRepository extends JpaRepository<Grupo, Long>{
-    
+      Grupo findByNombreGrupo (String nombreGrupo);
+       
 }

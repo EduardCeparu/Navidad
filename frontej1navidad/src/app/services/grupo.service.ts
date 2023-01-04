@@ -22,4 +22,9 @@ export class GrupoService {
   listarGrupos() :Observable<Grupo>{
     return this.http.get<Grupo>(this.URL + "list")
   }
+
+  //buscar grupo
+  buscarGrupo(nombre:String) : Observable<any>{
+    return this.http.get<any>(this.URL + "buscar/" +nombre)
+  }
 }

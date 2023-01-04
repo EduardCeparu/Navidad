@@ -21,4 +21,8 @@ public class GrupoService {
     public List<Grupo> listarGrupos(){
         return grupoRepository.findAll();
     }
+
+    public Grupo buscarPorGrupo(String grupo){
+        return grupoRepository.findByNombreGrupo(grupo);
+    }
 }

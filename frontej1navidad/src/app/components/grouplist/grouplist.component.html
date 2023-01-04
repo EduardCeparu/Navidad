@@ -8,7 +8,7 @@
         <tbody>
             <tr *ngFor="let grupo of grupos">
                 <td>{{grupo.nombreGrupo}}</td>
-                    <td>{{grupo.albums}}</td>
+                    <td><span *ngFor="let item of grupo.albums">{{item.nombreAlbum}}</span></td>
             </tr>
         </tbody>
     </table>

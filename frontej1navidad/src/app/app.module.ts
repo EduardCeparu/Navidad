@@ -9,13 +9,15 @@ import {HttpClientModule} from '@angular/common/http';
 import { HeaderComponent } from './components/header/header.component';
 import { GrouplistComponent } from './components/grouplist/grouplist.component';
 import { AlbumlistComponent } from './components/albumlist/albumlist.component';
-import { AlbumformComponent } from './components/albumform/albumform.component'
+import { AlbumformComponent } from './components/albumform/albumform.component';
+import { BuscadorComponent } from './components/buscador/buscador.component'
 
 const rutas:Routes = [
   {path: 'grupos/form', component:GrupoformComponent},
   {path: 'grupos', component:GrouplistComponent},
   {path: 'albums', component:AlbumlistComponent},
-  {path: 'albums/form', component:AlbumformComponent}
+  {path: 'albums/form', component:AlbumformComponent},
+  {path: 'search', component:BuscadorComponent}
 
 ]
 
@@ -26,7 +28,8 @@ const rutas:Routes = [
     HeaderComponent,
     GrouplistComponent,
     AlbumlistComponent,
-    AlbumformComponent
+    AlbumformComponent,
+    BuscadorComponent
   ],
   imports: [
     BrowserModule,

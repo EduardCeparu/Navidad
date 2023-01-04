@@ -1,0 +1,7 @@
+<form>
+    <input (keyup)="buscar()" type="text" name="nombreGrupo" [(ngModel)]="nombreGrupo" placeholder="Grupo...">
+</form>
+<h2>{{nombreGrupo}}</h2>
+<div *ngFor="let album of grupos.albums">
+    <p>{{album.nombreAlbum}}</p>
+</div>
